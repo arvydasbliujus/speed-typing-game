@@ -1,0 +1,86 @@
+/* colors */
+:root {
+  --color-primary: rgb(123, 167, 233);
+  --color-secondary: rgb(240, 235, 167);
+  --color-success: rgb(124, 209, 124);
+  --color-danger: rgb(235, 115, 115);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  background: var(--color-primary);
+  overflow-y: auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+body,
+.quote-input {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+
+}
+
+.time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer {
+  color: var(--color-secondary);
+  font-size: 3.5rem;
+  padding-left: 1rem;
+  font-weight: 500;
+}
+
+.container {
+  background: var(--color-secondary);
+  padding: 1.5rem 3rem;
+  border-radius: 1rem;
+  width: 700px;
+  max-width: 90%;
+  overflow-Y: scroll;
+}
+
+.quote-display {
+  margin-left: calc(1rem + 2px);
+  margin-right: calc(1rem + 2px);
+}
+
+.quote-input {
+  width: 100%;
+  margin: 1.5rem auto;
+  padding: .5rem 1rem;
+  border-radius: 1rem;
+  outline: none;
+  border: 2px solid var(--color-secondary);
+  height: 15rem;
+  resize: none;
+}
+
+.quote-input:focus {
+  border-color: var(--color-primary);
+}
+
+.correct {
+  color: var(--color-success);
+}
+
+.incorrect {
+  color: var(--color-danger);
+  text-decoration: underline;
+}
